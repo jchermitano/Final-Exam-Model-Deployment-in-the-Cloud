@@ -3,7 +3,7 @@ import tensorflow as tf
 
 @st.cache_resource
 def load_model():
-  model = '/content/drive/MyDrive/mor/Garbage-Junk'
+ model=tf.keras.models.load_model('Final_Exam_best_model.h5')
   return model
 model=load_model()
 st.write("""
