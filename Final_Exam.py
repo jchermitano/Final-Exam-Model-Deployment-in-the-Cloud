@@ -3,7 +3,7 @@ import tensorflow as tf
 
 @st.cache_resource
 def load_model():
-  model="https://drive.google.com/file/d/1-0ynckfzZYQzEwU3tLJ8wdGK5Krpfdrh/view?usp=share_link"
+  model=tf.keras.models.load_model('Final_Exam_best_model.h5')
   return model
 model=load_model()
 st.write("""
